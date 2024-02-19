@@ -14,7 +14,7 @@ struct FruitCardVuew: View {
     //MARK: - PROPERTIES
     @State private var isAnimating: Bool = false
     //MARK: - BODY
-
+//hello
     var body: some View {
         ZStack {
             
