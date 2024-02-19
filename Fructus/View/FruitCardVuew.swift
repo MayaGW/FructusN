@@ -13,20 +13,21 @@ struct FruitCardVuew: View {
     
     //MARK: - PROPERTIES
     @State private var isAnimating: Bool = false
+    var fruit: Fruit
     //MARK: - BODY
-//hello
+ 
     var body: some View {
         ZStack {
             
             VStack(spacing:20) {
                 //FRUIT: IMAGE
-                Image(.blueberry)
+                Image(fruit.image)
                     .resizable()
                     .scaledToFit()
                     .shadow(color: Color(red: 0, green: 0, blue: 0).opacity(0.15), radius: 8, x: 6, y: 8)
                 //FRUIT: TITILE
                 
-                Text("BLueBerry")
+                Text(fruit.title)
                     .foregroundColor(.white)
                     .font(.largeTitle)
                     .fontWeight(.heavy)
@@ -34,7 +35,7 @@ struct FruitCardVuew: View {
                     .scaleEffect(isAnimating ? 1: 0.6)
                 //FRUIT: HEADLINE
                 
-                Text("BlueBerries are sweet, nutritious and widley popular fruit all over the world")
+                Text(fruit.headline)
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
                     .padding(.horizontal,16)
@@ -52,13 +53,13 @@ struct FruitCardVuew: View {
         }
         
         .frame(minWidth: 0 ,maxWidth: .infinity,minHeight: 0,maxHeight: .infinity,alignment: .center)
-        .background(LinearGradient(colors: [.colorBlueberryLight,.colorBlueberryDark], startPoint: .top, endPoint: .bottom))
+        .background(LinearGradient(colors: fruit.gradientColors, startPoint: .top, endPoint: .bottom))
         .cornerRadius(20)
         .padding(.horizontal,20)
     }
 }
 //MARK: - PREVIEW
 #Preview {
-    FruitCardVuew()
+    FruitCardVuew(fruit: fruitsData[2])
         .previewLayout(.fixed(width: 320, height: 640))
 }
