@@ -23,6 +23,7 @@
 		81C8FD4D2B851E6400D95D41 /* FruitNutrientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8FD4C2B851E6400D95D41 /* FruitNutrientView.swift */; };
 		81C8FD4F2B8525FF00D95D41 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8FD4E2B8525FF00D95D41 /* SettingsView.swift */; };
 		81C8FD512B85F59500D95D41 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8FD502B85F59500D95D41 /* SettingsLabelView.swift */; };
+		81C8FD532B85FD7D00D95D41 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8FD522B85FD7D00D95D41 /* SettingsRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		81C8FD4C2B851E6400D95D41 /* FruitNutrientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrientView.swift; sourceTree = "<group>"; };
 		81C8FD4E2B8525FF00D95D41 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		81C8FD502B85F59500D95D41 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
+		81C8FD522B85FD7D00D95D41 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				81C8FD4C2B851E6400D95D41 /* FruitNutrientView.swift */,
 				81C8FD4E2B8525FF00D95D41 /* SettingsView.swift */,
 				81C8FD502B85F59500D95D41 /* SettingsLabelView.swift */,
+				81C8FD522B85FD7D00D95D41 /* SettingsRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				81C8FD432B83C4B200D95D41 /* FruitData.swift in Sources */,
 				81C8FD4B2B84BC1600D95D41 /* SourceLinkView.swift in Sources */,
+				81C8FD532B85FD7D00D95D41 /* SettingsRowView.swift in Sources */,
 				815F27852B82770E00D79200 /* ContentView.swift in Sources */,
 				815F27AF2B83977500D79200 /* StartButtonView.swift in Sources */,
 				81C8FD452B83D2A100D95D41 /* ListRowView.swift in Sources */,
